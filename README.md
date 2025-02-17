@@ -2,6 +2,7 @@
 
 Weather App 🌦️
 
+Website Screenshots path: ( public/Screenshots )
 
 Features & Functionalities 🚀
 
