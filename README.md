@@ -1,50 +1,48 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite + TailwindCSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Weather App 🌦️
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features & Functionalities 🚀
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+🌟 User Interface & Styling
 
-- Configure the top-level `parserOptions` property like this:
+Built with React.js and Vite for fast performance.
+Styled using Tailwind CSS and shadcn/ui for a modern and responsive UI.
+Dark Mode & Light Mode toggle for better user experience.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+🌍 Weather Data Display
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Fetches real-time weather details (temperature, humidity, wind speed, etc.) using the OpenWeather API.
+Displays weather conditions in a card-based UI.
+Includes a graph visualization of temperature trends for a better user experience.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+🔍 Search & Filtering
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Users can search for any city to get its weather details.
+Filter feature to refine search results efficiently.
+
+⭐ Favorites & Recent Searches
+
+Stores last searched locations so users can quickly access previous searches.
+Allows users to mark favorite locations for easy tracking.
+
+🌐 Routing & Navigation
+
+Implemented with react-router-dom for smooth navigation.
+Home Page (/) - Displays the weather details of a searched location.
+Details Page (/city/:id) - Shows in-depth weather data for a selected city.
+
+⚡ State Management
+
+Used useState & useEffect for handling API requests and state updates.
+
+Tech Stack 🛠️
+
+Frontend: React.js, Vite
+Styling: Tailwind CSS, shadcn/ui
+State Management: React Hooks (useState, useEffect)
+Routing: react-router-dom
+API: OpenWeather API
+
