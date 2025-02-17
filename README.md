@@ -2,7 +2,7 @@
 
 Weather App 🌦️
 
-Website Screenshots path: ( public/Screenshots )
+Website Screenshots path: ( public/Screenshots )  -> https://github.com/Abhishek-singh-007/WeatherApp/tree/main/public/Screenshots
 
 Features & Functionalities 🚀
 
